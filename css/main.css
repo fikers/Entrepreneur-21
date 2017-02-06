@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) no-repeat;
+	min-height: 1000px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.header {
+	font-family: 'Amatic SC', cursive;
+	color: white;
+}
+
+
+.header ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px;
+	padding-top:25px;
+	font-size: 20px;
+}
+
+
+.section {
+	width: 100%;
+	background-image: url(/images/pic2.jpg);
+	height:700px;
+}
+
+.navbar-fixed-top {
+	background-color: #00a9ec;
+}
+
+
+
+
+/* The following CSS is for adjusting the page to different screen sizes */
+
+@media (max-width: 790px) {
+
+	#logo {
+	text-align:center;
+	}
+
+	.header ul li {
+	list-style-type: none;
+	display: block;
+	padding: 3px;
+	font-size: 20px;
+	text-align:center;
+	}
+
+	.navbar-fixed-top {
+		background-color: #00a9ec;
+}
+}
+
+
+@media (min-width: 790px) and (max-width: 1200px) {
+
+	#logo {
+	text-align:center;
+	}
+
+	.header ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px;
+	padding-top:25px;
+	font-size: 20px;
+	}
+
+	#size-adjust {
+	text-align:center;
+	}
+
+}
