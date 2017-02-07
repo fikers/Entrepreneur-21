@@ -1,27 +1,131 @@
+/* General CSS */
+
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	box-sizing: border-box;
+	border: 1px solid transparent;
 }
 
 body {
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
 	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) no-repeat;
-	min-height: 1000px;
+	display: block;
 }
 
-.left {
-	float: left;
+h1 {
+	margin:0px;
 }
 
-.right {
-	float: right;
+.remove-container-padding {
+	padding:0px;
 }
 
 .header {
-	font-family: 'Amatic SC', cursive;
-	color: white;
+	margin:0px;
+	margin-top: 10px;
+	height: auto;
+	width: 100%;
+	background-color: clear;
+	color:white;
+}
+
+div {
+	display: block;
+}
+
+/* Front fold */
+
+.front-fold {
+	width: 100%;
+	padding:0px;
+	background-image: url(/images/pic4.jpg);
+	background-size:cover;
+	height: 100%;
+
+}
+
+.front-fold-container {
+	padding:0px;
 }
 
 
+.front-fold-main-content {
+	text-align: center;
+	color:white;
+	height: auto;
+    position: relative;
+    font-size:50px;
+    top: 35%;
+}
+
+#flow-logo {
+	font-size: 30px;
+}
+
+#what-is-this-text {
+	text-align: right;
+	margin-top:10px;
+	font-size: 14px;
+	height: 50%;
+}
+
+#quote {
+	position: static;
+}
+
+/* Form */
+
+.form {
+	height: auto;
+	position: relative;
+	top:40%;
+	text-align: center;
+	color: white;
+}
+
+.form-format {
+	color: black;
+}
+
+
+/* Main Section */
+
+.main-section {
+	background-color: #00a9ec;
+}
+
+
+
+/* Footer Fold */
+
+.footer-fold {
+	background-color: #ffd200;
+}
+
+
+
+
+
+
+
+
+
+
+/* Links Navgiation */
+
+#navbar {
+	background-color: #00a9ec;
+}
+
+
+.header ul {
+	margin-bottom:0px;
+}
 .header ul li {
 	list-style-type: none;
 	display: inline-block;
@@ -30,58 +134,59 @@ body {
 	font-size: 20px;
 }
 
-
-.section {
-	width: 100%;
-	background-image: url(/images/pic2.jpg);
-	height:700px;
+.header ul li:hover {
+	color: black;
+	background-color: #fff;	
 }
 
-.navbar-fixed-top {
-	background-color: #00a9ec;
-}
-
-
-
-
-/* The following CSS is for adjusting the page to different screen sizes */
-
-@media (max-width: 790px) {
-
-	#logo {
-	text-align:center;
-	}
-
-	.header ul li {
-	list-style-type: none;
-	display: block;
-	padding: 3px;
-	font-size: 20px;
-	text-align:center;
-	}
-
-	.navbar-fixed-top {
-		background-color: #00a9ec;
-}
+.header ul li:active {
+	background-color: #000;	
 }
 
 
-@media (min-width: 790px) and (max-width: 1200px) {
 
-	#logo {
-	text-align:center;
+
+/* The following CSS is for adjusting the page if the screen width is between 449px and 992px */
+
+@media (max-width: 992px) {
+	
+	#where-pic-taken-text {
+		display: none;
 	}
 
-	.header ul li {
-	list-style-type: none;
-	display: inline-block;
-	padding: 10px;
-	padding-top:25px;
-	font-size: 20px;
+	#flow-logo {
+		width: 100%;
+		text-align: center;
 	}
 
-	#size-adjust {
-	text-align:center;
+	.front-fold-main-content {
+	text-align: center;
+    font-size:40px;
+    top: 35%;
+	}
+
+}
+
+/* The following CSS is for adjusting the page if the screen width is less than 449px  */
+
+
+
+
+@media (max-width: 449px) {
+	
+	#where-pic-taken-text {
+		display: none;
+	}
+
+	#flow-logo {
+		width: 100%;
+		text-align: center;
+	}
+
+	.front-fold-main-content {
+	text-align: center;
+    font-size:30px;
+    top: 35%;
 	}
 
 }
