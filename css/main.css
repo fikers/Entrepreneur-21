@@ -90,6 +90,19 @@ div {
 
 .form-format {
 	color: black;
+	padding: 15px;
+	border-radius: 5px;
+	height: 40px;
+	width: 300px;
+}
+
+.form-button {
+	color: white;
+	background-color: #00a9ec;
+	padding: 0px 35px;
+	font-size:20px;
+	border-radius: 5px;
+	height: 40px;
 }
 
 
@@ -162,14 +175,12 @@ div {
 	.front-fold-main-content {
 	text-align: center;
     font-size:40px;
-    top: 35%;
+    top: 30%;
 	}
 
 }
 
 /* The following CSS is for adjusting the page if the screen width is less than 449px  */
-
-
 
 
 @media (max-width: 449px) {
@@ -186,7 +197,34 @@ div {
 	.front-fold-main-content {
 	text-align: center;
     font-size:30px;
-    top: 35%;
+    top: 30%;
+	}
+
+	#name-input {
+		width:  70%;
+	}
+	
+	#email-input {
+		width:  70%;
+	}
+}
+
+/* The following CSS is for adjusting the page if the screen width is less than 991px  */
+
+
+
+@media (max-width: 992px) {
+	
+	#name-input {
+		width:  100%;
+	}
+
+	#email-input {
+		width:  100%;
+	}
+
+	.form-group {
+		margin:5px;
 	}
 
 }
