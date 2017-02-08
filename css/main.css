@@ -8,6 +8,10 @@
 	border: 1px solid transparent;
 }
 
+:root {
+	--color: #9246D3;
+}
+
 body {
 	height: 100%;
 	font-family: 'Titillium Web', cursive;
@@ -108,7 +112,7 @@ div {
 
 .form-button {
 	color: white;
-	background-color: #a22e88;
+	background-color: var(--color);
 	padding: 0px 30px;
 	border-radius: 5px;
 	height: 40px;
@@ -211,7 +215,7 @@ div {
 
 	.form-button {
 	color: white;
-	background-color: #a22e88;
+	background-color: var(--color);
 	padding: 0px 30px;
 	border-radius: 5px;
 	height: 40px;
@@ -231,7 +235,7 @@ div {
 	margin: -50px auto;
 	height: auto;
 	position: relative;
-	top:30%;
+	top:27%;
 	text-align: center;
 	color: white;
 	}
@@ -249,7 +253,7 @@ div {
 
 	.form-button {
 	color: white;
-	background-color: #a22e88;
+	background-color: var(--color);
 	padding: 0px 30px;
 	border-radius: 5px;
 	height: 40px;
@@ -260,9 +264,10 @@ div {
 	width:80%;
 	}
 
+
 	.front-fold-main-content {
-		top: 15%;
-		font-size: 30px;
+		top: 12%;
+		font-size:30px;
 	}
 
 }
